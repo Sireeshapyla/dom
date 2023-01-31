@@ -1,0 +1,76 @@
+var itemlist = document.querySelector('#items');
+//parentnode
+//console.log(itemlist.parentNode);
+//itemlist.parentNode.style.backgroundColor='#f4f4f4';
+//console.log(itemlist.parentNode.parentNode.parentNode);
+
+//parentElement
+//console.log(itemlist.parentElement);
+//itemlist.parentElement.style.backgroundColor='#f4f4f4';
+//console.log(itemlist.parentElement.parentElement.parentElement);
+
+//childNodes
+//console.log(itemlist.childNodes);
+//if we want to access a specific child
+//console.log(itemlist.children[1]);
+//itemlist.children[1].style.backgroundColor='Yellow';
+//FirstChild
+//console.log(itemlist.firstChild);
+//FirstElementChild
+//console.log(itemlist.firstElementChild);
+//itemlist.firstElementChild.textContent='Hello1';
+
+//lastChild
+//console.log(itemlist.lastChild);
+//lastElementChild
+//console.log(itemlist.lastElementChild);
+//itemlist.lastElementChild.textContent='Hello4';
+
+//nextSibling
+//console.log(itemlist.nextSibling);
+//nextElementSibling
+//console.log(itemlist.nextElementSibling);
+
+//PreviousSibling
+//console.log(itemlist.previousSibling);
+//previousElementSibling
+//console.log(itemlist.previousElementSibling);
+//itemlist.previousElementSibling.style.color = 'green';
+
+//Creating an element
+
+//create a div
+var newDiv= document.createElement('div');
+
+//Add id
+newDiv.id='hello1';
+
+//add attribute
+newDiv.setAttribute('title','Hello Div');
+
+//Create a text node
+var newDivtext = document.createTextNode('Hello world');
+//Add text to div
+
+newDiv.appendChild(newDivText);
+
+var contaniner=document.quarySelector('header.container');
+var h1 = documnet.queryselector('header h1');
+
+console.log(newDiv);
+newDiv.style.fontsize = '30Px';
+
+contaniner.insertBefore(newDiv,h1);
+
+//Hello world before items 
+
+
+var contaniner=document.quarySelector('header.container');
+var h1 = documnet.queryselector('header h2');
+
+console.log(newDiv);
+newDiv.style.fontsize = '30Px';
+
+contaniner.insertBefore(newDiv,h2);
+
+
